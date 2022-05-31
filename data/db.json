@@ -20,6 +20,20 @@
       "lastName": "Omar",
       "picture": "./assets/ema.svg",
       "testimony": "Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+    },
+    {
+      "firstName": "Cruz",
+      "lastName": "Madison",
+      "testimony": "Illo dolores asperio",
+      "picture": "http://res.cloudinary.com/temidayo-falomo/image/upload/v1653957812/Headbandpic_aqrfvz.jpg",
+      "id": 4
+    },
+    {
+      "firstName": "miles",
+      "lastName": "Morales",
+      "testimony": "Miles Morales, a young kid from Brooklyn visited his uncle Aaron Davis (which was against his parents' wishes, due to his uncle's criminal past).",
+      "picture": "http://res.cloudinary.com/temidayo-falomo/image/upload/v1653957924/Miles_Morales_ssdgso.jpg",
+      "id": 5
     }
   ]
 }
