@@ -16,7 +16,12 @@ button {
   border-radius: 10px;
 }
 
+.App {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #141414;
   color: #fff;
+  overflow-x: hidden;
 }

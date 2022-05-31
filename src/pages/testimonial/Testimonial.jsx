@@ -64,7 +64,7 @@ function Testimonial() {
         <div className="input">
           <label htmlFor="">First Name:</label>
           <input
-            type="text"
+            type="name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
@@ -73,7 +73,7 @@ function Testimonial() {
         <div className="input">
           <label htmlFor="">Last Name:</label>
           <input
-            type="text"
+            type="name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
@@ -82,7 +82,7 @@ function Testimonial() {
         <div className="input">
           <label htmlFor="">Your Story:</label>
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
