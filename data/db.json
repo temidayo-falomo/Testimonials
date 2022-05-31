@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "picture": "./assets/jo.svg",
+      "testimony": "Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+    },
+    {
+      "id": 2,
+      "firstName": "Kemi",
+      "lastName": "Temidayo",
+      "picture": "./assets/ade.svg",
+      "testimony": "Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+    },
+    {
+      "id": 3,
+      "firstName": "Robert",
+      "lastName": "Omar",
+      "picture": "./assets/ema.svg",
+      "testimony": "Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim."
+    }
+  ]
+}

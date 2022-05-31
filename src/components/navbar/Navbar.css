@@ -1,0 +1,15 @@
+nav {
+    /* border: 2px white solid; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hamburger {
+    cursor: pointer;
+}
