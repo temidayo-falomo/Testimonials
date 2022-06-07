@@ -10,7 +10,7 @@ function Home() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3800/items").then((res) => {
+    axios.get("https://my-json-server.typicode.com/temidayo-falomo/Testimonials").then((res) => {
       setUsers(res.data.reverse());
     });
   }, []);
@@ -25,7 +25,7 @@ function Home() {
       <div className="home-testimonials">
         {users.map((user, index) => {
           return (
-            <div className="user-testimonial" key={user.id}>
+            <div className="user-testimonial" key={index}>
               <span>{index + 1}.</span>
               <div className="avatar">
                 <img src={user.picture} alt="User" />

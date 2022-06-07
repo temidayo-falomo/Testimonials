@@ -47,57 +47,73 @@ function Testimonial() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3800/items", data).then(navigate("/"));
+    axios
+      .post(
+        "https://my-json-server.typicode.com/temidayo-falomo/demo-testimonials-api/items",
+        data
+      )
+      .then(navigate("/"));
   };
 
   return (
     <>
-    <Navbar />
-    <section className="testimonials-page">
-      <form className="testimonial-form" onSubmit={handleSubmit}>
-        <h1>Share your story!</h1>
-        <div className="input">
-          <label htmlFor="">Upload Picture:</label>
-          <input type="file" onChange={uploadImage} required className="custom-file-input"/>
-          {loading ? <h4>Image Updated!</h4> : <h4 className="not-updated">Image not updated !</h4>}
-        </div>
-        <div className="input">
-          <label htmlFor="">First Name:</label>
-          <input
-            type="name"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <label htmlFor="">Last Name:</label>
-          <input
-            type="name"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="input">
-          <label htmlFor="">Your Story:</label>
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            value={testimony}
-            onChange={(e) => setTestimony(e.target.value)}
-            required
-          ></textarea>
-        </div>
-        {loading ? (
-          <button>Share Story</button>
-        ) : (
-          <button disabled className="disabled">Share Story</button>
-        )}
-      </form>
-    </section>
+      <Navbar />
+      <section className="testimonials-page">
+        <form className="testimonial-form" onSubmit={handleSubmit}>
+          <h1>Share your story!</h1>
+          <div className="input">
+            <label htmlFor="">Upload Picture:</label>
+            <input
+              type="file"
+              onChange={uploadImage}
+              required
+              className="custom-file-input"
+            />
+            {loading ? (
+              <h4>Image Updated!</h4>
+            ) : (
+              <h4 className="not-updated">Image not updated !</h4>
+            )}
+          </div>
+          <div className="input">
+            <label htmlFor="">First Name:</label>
+            <input
+              type="name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input">
+            <label htmlFor="">Last Name:</label>
+            <input
+              type="name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input">
+            <label htmlFor="">Your Story:</label>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              value={testimony}
+              onChange={(e) => setTestimony(e.target.value)}
+              required
+            ></textarea>
+          </div>
+          {loading ? (
+            <button>Share Story</button>
+          ) : (
+            <button disabled className="disabled">
+              Share Story
+            </button>
+          )}
+        </form>
+      </section>
     </>
   );
 }
