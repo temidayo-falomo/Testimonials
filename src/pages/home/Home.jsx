@@ -10,9 +10,13 @@ function Home() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://my-json-server.typicode.com/temidayo-falomo/Testimonials").then((res) => {
-      setUsers(res.data.reverse());
-    });
+    axios
+      .get(
+        "https://hickory-buttered-marmoset.glitch.me/db.json"
+      )
+      .then((res) => {
+        setUsers(res.data.reverse());
+      });
   }, []);
 
   return (

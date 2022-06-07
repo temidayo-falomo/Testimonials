@@ -49,7 +49,7 @@ function Testimonial() {
     e.preventDefault();
     axios
       .post(
-        "https://my-json-server.typicode.com/temidayo-falomo/demo-testimonials-api/items",
+        "https://my-json-server.typicode.com/temidayo-falomo/testimonials/items",
         data
       )
       .then(navigate("/"));
