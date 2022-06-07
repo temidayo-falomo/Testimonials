@@ -20,7 +20,7 @@ function Home() {
       <Navbar />
       <Hero />
       <h2 style={{ textAlign: "center", marginBottom: "25px" }}>
-        What Our Users Say about Us(Say Something👀)
+        What Our Users Say about Us(Say Something 👀)
       </h2>
       <div className="home-testimonials">
         {users.map((user, index) => {
