@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     axios
       .get(
-        "https://hickory-buttered-marmoset.glitch.me/db.json"
+        "https://my-json-server.typicode.com/temidayo-falomo/testimonials/items"
       )
       .then((res) => {
         setUsers(res.data.reverse());
